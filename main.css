@@ -1,0 +1,558 @@
+
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* estilos contenedor gral */
+.main-set{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.001fr 0.3fr 0.5fr 0.001fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+/* estilos navegador */
+nav {
+   grid-area: nav;
+}
+nav ul{
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: end ;
+    background-color: #cecaca;
+}
+nav ul li{
+    display: inline-block;
+    margin: 8px 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* estilos de header */
+header {
+    grid-area: header;
+}
+.header-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    background-color: #f3baba;
+    background-image: url(multimedia/img/header_princ.jpg);
+    min-height: 800px;
+}
+.header-home h1{
+    text-align: center;
+    font-size: 40px;
+}
+.header-home p{
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+/* estilos main  */
+main {
+    grid-area: main;
+}
+.programas-home-seccion1{
+    display: grid;
+    grid-template-columns: 0 repeat(2, 1fr) repeat(2, 0);
+    grid-template-rows: 0 repeat(2, 1fr) repeat(2, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    width: 100%;
+}
+.programa-home1{
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(multimedia/img/curso_minist.jpg);
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+
+    text-align: center;
+    font-size: 60px;
+    color: #0d0e0d;
+}    
+.programa-home2{
+    grid-area: 3 / 2 / 4 / 3;
+    background-image: url(multimedia/img/teens.jpg);
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+
+    text-align: right;
+    font-size: 60px;
+    color: #e0079f;
+}
+.programa-home3{
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(multimedia/img/kids.jpg);
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+
+    text-align: center;
+    font-size: 60px;
+    color: #070707;
+}
+.programa-home4{
+    grid-area: 3 / 3 / 4 / 4;
+    background-image: url(multimedia/img/personal.jpg);
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+
+    text-align: center;
+    font-size: 60px;
+    color: #e0079f;
+}
+.seccion1-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e2d9d9;
+}
+.seccion1-cont h4 {
+    font-size: 40px;
+}
+.sedesHome-2 h4 {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* estilos footer */
+footer {
+    grid-area: footer;
+
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+}
+.footer div h6{
+    text-align: center;
+}
+.footer-ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+.footer-ul li{
+    display: inline-block;
+    margin: 8px 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/* estilos header programas */
+.header-programas{
+    background-image: url(./multimedia/img/minis-princ.jpg);
+    min-height: 600px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+.header-programas h1{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+.header-programas p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-programas div{
+    width: 800px;
+    height: 150px;
+    padding: 200px 10px;
+}
+
+/* estilos main programas */
+.main-programas h3{
+    text-align: center;
+    font-size: 30px;
+}
+.seccion-programa-ministerial p{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pregunta1{
+    font-weight: bold;
+}
+.pregunta2{
+    font-weight: bold;
+}
+.pregunta3{
+    font-weight: bold;
+}
+.pregunta4{
+    font-weight: bold;
+}
+.pregunta5{
+    font-weight: bold;
+}
+.pregunta6{
+    font-weight: bold;
+}
+.pregunta7{
+    font-weight: bold;
+}
+.pregunta8{
+    font-weight: bold;
+}
+.pregunta9{
+    font-weight: bold;
+}
+.pregunta10{
+    font-weight: bold;
+}
+.pregunta11{
+    font-weight: bold;
+}
+.pregunta12{
+    font-weight: bold;
+}
+.seccion-programa-teens p{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.seccion-programa-kids p{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.seccion-programa-personalizado p{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* estilos header galeria */
+.header-galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+
+}
+
+.header-galeria h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+/* estilos main galeria */
+.main-galeria h3 {
+    text-align: center;
+}
+
+.seccion1-galeria-2018{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion2-galeria-2019{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* estilos navegador profesores */
+
+nav {
+    grid-area: nav;
+ }
+ .nav-profes ul{
+     list-style-type: none;
+     text-align: right;
+     display: flex;
+     flex-direction: row;
+     justify-content: end ;
+     background-color: #cecaca;
+ }
+ .nav-profes ul li{
+     display: inline-block;
+     margin: 8px 8px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .nav-profes ul li a{
+     font-size: 20px;
+ }
+
+ /* estilos header profes */
+.header-profes{
+    background-image: url(./multimedia/img/profes-header.jpg);
+    background-position: center ;
+    min-height: 600px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.header-profes h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+/* estilos main profesores */
+
+.main-profes h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-profes h3{
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #07589e;
+}
+
+.main-profes section h5{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #e01384;
+}
+
+.main-profes section img{
+    display: block;
+    margin: 0px auto;
+}
+
+/* estilos header historia */
+.header-nosotros h1{
+    text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 40px;
+}
+.header-nosotros img{
+    display: block;
+    margin: 0px auto;
+}
+
+.main-nosotros table{
+    border: none;
+    width: 100%;
+}
+.main-nosotros td{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 20px;
+    text-align: justify;
+    vertical-align: top;
+    width: 50%;
+    border: 1px solid black;
+}
+
+/* ================================================================================================================= */
+
+@media screen and (min-width: 769px) {
+
+    /* estilos contenedor */
+    .main-set{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.001fr 0.3fr 0.3fr 0.001fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+    /* Estilos navegador */
+
+     nav ul li a{
+         font-size: 15px;
+     }
+    /* Estilos header */
+    .header-home{
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-around;
+        background-color: #f3baba;
+        background-image: url(multimedia/img/header_princ.jpg);
+        min-height: 900px;
+    }
+
+    .header-home h1{
+        font-size: 30px;
+    }
+
+    .header-home p{
+        font-size: 28px;
+    }
+    /* --------------------------------------------------- */
+    /* estilos header profes */
+    
+    .header-profes{
+        background-image: url(./multimedia/img/profes-header.jpg);
+        min-height: 600px;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+    .header-profes h1{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+        color: #ffffff;
+    }
+    
+    /* estilos main profesores */
+    
+    .main-profes h2{
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .main-profes h3{
+        text-align: left;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: #07589e;
+    }
+    
+    .main-profes section h5{
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        color: #e01384;
+    }
+    
+    .main-profes section img{
+        display: block;
+        margin: 0px auto;
+    }
+
+}    
+
+@media screen and (min-width: 1025px){
+    
+    /* estilos contenedor */
+    .main-set{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.001fr 0.3fr 0.3fr 0.001fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+        
+        width:100%;
+        height:auto;
+    }
+    /* Estilos navegador */
+
+     nav ul li a{
+         font-size: 15px;
+
+
+     }
+    /* Estilos header */
+    .header-home{
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-around;
+        background-color: #f3baba;
+        background-image: url(multimedia/img/header_princ.jpg);
+        min-height: 900px;
+    }
+
+    .header-home h1{
+        font-size: 30px;
+    }
+
+    .header-home p{
+        font-size: 28px;
+    }
+
+    /* main animaciones */
+
+    /* --------------------------------------------------- */
+    /* estilos header profes */
+    
+    .header-profes{
+        background-image: url(./multimedia/img/profes-header.jpg);
+        min-height: 600px;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+    .header-profes h1{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+        color: #ffffff;
+    }
+
+    .sedesHome-2 img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    /* estilos main profesores */
+    
+    .main-profes h2{
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .main-profes h3{
+        text-align: left;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: #07589e;
+    }
+    
+    .main-profes section h5{
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        color: #e01384;
+    }
+    
+    .main-profes section img{
+        display: block;
+        margin: 0px auto;
+    }
+
+}
+
+
+/* HOVER */
+
+
+/* ANIMACIONES */
+
+
