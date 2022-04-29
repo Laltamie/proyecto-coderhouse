@@ -480,6 +480,14 @@ font-size: 40px;
          transition-timing-function: ease-in-out;
 
      }
+
+     .programas-home-seccion1 h5{
+        animation-name: destaque-uno;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+    }
     /* Estilos header */
     .header-home{
         flex-direction: row;
@@ -559,5 +567,12 @@ nav ul li a:hover {
 }
 
 /* ANIMACIONES */
+
+@keyframes destaque-uno {
+
+    0%{
+        font-size: 60px;
+    }
+}
 
 
